@@ -1,11 +1,12 @@
+/*This is a program to convert static stack elements into dynamic linked list..*/
 #include<stdio.h>
 #include<stdlib.h>
 struct Node
 {
     int ele;
     struct Node *next;
-};
-struct Node *first;
+};//structure for a Node 
+struct Node *first;//declaring the pointer first of Node so that we can use it anywhere in the program..
 void convert(int a)
 {
     struct Node *nn, *temp;
@@ -55,7 +56,4 @@ int main()
     }
     display();
     return 0;
-
-
-
 }
